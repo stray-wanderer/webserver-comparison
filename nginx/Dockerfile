@@ -1,7 +1,3 @@
-FROM node
-WORKDIR /app
-COPY package.json .
-RUN npm install
-COPY . .
-CMD node app.js
-EXPOSE 5000
+FROM nginx
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
