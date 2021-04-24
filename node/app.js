@@ -4,7 +4,7 @@ const app = express()
 const os = require('os');
 const port = 5000
 const folder = 'Pics'
-
+//Imagetest
 function base64encode(file){
 
 	var readFile = fs.readFileSync(file);
@@ -25,6 +25,7 @@ var html = ''
 for(var i = 0; i < base64Files.length; i++){
 	html += '<img src = "data:image/jpg;base64, ' + base64Files[i] +'"/>'
 }
+//visittest
 
 app.get('/', (req, res) => {
     res.send(`<h3>It's ${os.hostname()}</h3>`);
@@ -33,6 +34,19 @@ app.get('/', (req, res) => {
 app.get('/imagetest', (req, res) => {
     res.send(html);
 
+})
+
+//factorialtest
+function factorial (n) {
+	if (n <= 0) {
+
+		return 1;
+	}
+	return n * factorial(n-1)
+}
+app.get('/factorialtest', (req, res) => {
+
+	res.send(`<h3>${factorial(100)}</h3>`)
 })
 
 app.listen(port, () => {
