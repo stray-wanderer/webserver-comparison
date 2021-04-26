@@ -1,0 +1,14 @@
+// 1 node - 5 tests
+
+Test total duration was 69 seconds and CAPS average 15:
+H/F   Req:1000,1xx:0,2xx:1000,3xx:0,4xx:0,5xx:0,Err:0,T-Err:1000,D:569ms,D-2xx:569ms,Ti:5436758B/s,To:1797B/s
+H/F/S Req:0,1xx:0,2xx:0,3xx:0,4xx:0,5xx:0,Err:0,T-Err:0,D:0ms,D-2xx:0ms,Ti:0B/s,To:0B/s
+
+Test total duration was 69 seconds and CAPS average 15:
+H/F   Req:1000,1xx:0,2xx:1000,3xx:0,4xx:0,5xx:0,Err:0,T-Err:1000,D:537ms,D-2xx:537ms,Ti:5367136B/s,To:1797B/s
+H/F/S Req:0,1xx:0,2xx:0,3xx:0,4xx:0,5xx:0,Err:0,T-Err:0,D:0ms,D-2xx:0ms,Ti:0B/s,To:0B/s
+
+Test total duration was 69 seconds and CAPS average 15:
+H/F   Req:1000,1xx:0,2xx:1000,3xx:0,4xx:0,5xx:0,Err:0,T-Err:1000,D:479ms,D-2xx:479ms,Ti:5488745B/s,To:1797B/s
+H/F/S Req:0,1xx:0,2xx:0,3xx:0,4xx:0,5xx:0,Err:0,T-Err:0,D:0ms,D-2xx:0ms,Ti:0B/s,To:0B/s
+

@@ -46,7 +46,14 @@ function factorial (n) {
 }
 app.get('/factorialtest', (req, res) => {
 
-	res.send(`<h3>${factorial(100)}</h3>`)
+	var result = '<h3>'
+	for (var i = 0; i < 1000; i++) {
+
+		result += factorial (100) +  ' ' 
+	}  
+	result += '</h3>'  
+
+	res.send(`${result}`)
 })
 
 app.listen(port, () => {
